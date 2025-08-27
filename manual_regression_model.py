@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df = pd.read_csv('D:\\uni stuff\\2024-2025\\Spring 2024-2025\\AIRE310\\data.csv')
+df = pd.read_csv('data.csv')
 
 x = df.iloc[:, 0].values
 y = df.iloc[:, 1].values
@@ -34,4 +34,5 @@ error = np.subtract(y_test, testResults)
 errorSquared = np.power(error, 2)
 meanErrorSquared = (1/len(errorSquared))*np.sum(errorSquared)
 RMSE = np.sqrt(meanErrorSquared)
+
 print("RMSE: ", RMSE)
