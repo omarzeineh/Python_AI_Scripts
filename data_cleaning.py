@@ -3,9 +3,9 @@ import numpy as np
 
 
 # load data sets
-gas = pd.read_excel('C:\\Users\\omarz\\OneDrive\\Desktop\\hackathon\\gas_flows.xlsx')
-parameters = pd.read_excel('C:\\Users\\omarz\\OneDrive\\Desktop\\hackathon\\process_parameters.xlsx')
-specs = pd.read_excel('C:\\Users\\omarz\\OneDrive\\Desktop\\hackathon\\IOP_specs.xlsx')
+gas = pd.read_excel('gas_flows.xlsx')
+parameters = pd.read_excel('process_parameters.xlsx')
+specs = pd.read_excel('IOP_specs.xlsx')
 
 
 # merging data
@@ -48,6 +48,7 @@ for col in merged_data.columns:
 print(merged_data.head().to_string())
 
 
-merged_data.to_csv("C:\\Users\\omarz\\OneDrive\\Desktop\\hackathon\\cleaned_merged_data.csv", index=False)
+merged_data.to_csv("cleaned_merged_data.csv", index=False)
+
 
 
