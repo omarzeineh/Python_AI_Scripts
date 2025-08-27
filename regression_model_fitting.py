@@ -6,7 +6,7 @@ from sklearn.metrics import root_mean_squared_error
 from sklearn.svm import SVR
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import GradientBoostingRegressor
-clean_data_C = pd.read_csv("C:\\Users\\omarz\\OneDrive\\Desktop\\hackathon\\cleaned_merged_data.csv")
+clean_data_C = pd.read_csv("cleaned_merged_data.csv")
 
 features = clean_data_C.drop(['MET', 'C', 'ANALYSIS_TIMESTAMP'], axis=1).values
 C = clean_data_C['C'].values
@@ -29,4 +29,5 @@ C_rmse = root_mean_squared_error(C_train, C_pred)
 MET_rmse = root_mean_squared_error(MET_train, MET_pred)
 
 print('C_rmse', C_rmse)
+
 print('MET_rmse', MET_rmse)
