@@ -31,7 +31,7 @@ If you want to run those scripts, you will need to prepare or substitute similar
 ### 3. `manual_regression_model.py`
 - Implements **Polynomial Regression (degree = 2)** manually using matrix algebra (Normal Equation).  
 - Computes weights, predictions, and RMSE.  
-⚠️ Requires an external `data.csv` file (not included):contentReference[oaicite:2]{index=2}.
+⚠️ Requires an external `data.csv` file:contentReference[oaicite:2]{index=2}.
 
 ---
 
@@ -39,7 +39,7 @@ If you want to run those scripts, you will need to prepare or substitute similar
 - Fits a **Polynomial Regression** model with scikit-learn.  
 - Splits dataset into train/test.  
 - Calculates RMSE, predicts values, and plots fitted curves.  
-⚠️ Depends on `data.csv`, which is not included:contentReference[oaicite:3]{index=3}.
+⚠️ Depends on `data.csv`:contentReference[oaicite:3]{index=3}.
 
 ---
 
@@ -47,7 +47,7 @@ If you want to run those scripts, you will need to prepare or substitute similar
 - Fits polynomial regression on the **entire dataset**.  
 - Evaluates RMSE across all points.  
 - Plots regression curve.  
-⚠️ Requires `data.csv` (not provided):contentReference[oaicite:4]{index=4}.
+⚠️ Requires `data.csv`:contentReference[oaicite:4]{index=4}.
 
 ---
 
@@ -74,7 +74,7 @@ If you want to run those scripts, you will need to prepare or substitute similar
 ### 8. `ml_hyperparameter_tuning.py`
 - Performs hyperparameter tuning for KNN, Decision Trees, Random Forests, and SVMs.  
 - Finds optimal values for `k`, tree depth, estimator count, kernel, and gamma.  
-⚠️ Requires `data.xlsx` containing moon, circle, and blob datasets (not included):contentReference[oaicite:7]{index=7}.
+⚠️ Requires `data.xlsx` containing moon, circle, and blob datasets:contentReference[oaicite:7]{index=7}.
 
 ---
 
