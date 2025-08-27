@@ -19,7 +19,7 @@ def calcLoss(yActual, yPredicted):
 
     return 1-(correct/len(yActual))
 
-df = pd.read_excel("D:\\uni stuff\\2024-2025\\Spring 2024-2025\\AIRE310\\lab2\\data.xlsx")
+df = pd.read_excel("data.xlsx")
 df.drop(columns=["Unnamed: 0"], inplace=True)
 
 moonX = df.loc[:,['moonx0', 'moonx1']].values
@@ -102,6 +102,7 @@ kernelInd = np.where(L == L.min())[0][0]
 GIndex = np.where(L == L.min())[1][0]
 
 print("The Gamma and kernel combintaion with the least loss is [", G[GIndex], kernels[kernelInd], "] With the loss value of ", L.min())
+
 
 
 
