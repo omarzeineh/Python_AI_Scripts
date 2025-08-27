@@ -5,7 +5,7 @@ from sklearn.metrics import root_mean_squared_error
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv('D:\\uni stuff\\2024-2025\\Spring 2024-2025\\AIRE310\\data.csv')
+df = pd.read_csv('data.csv')
 
 x = df.iloc[:, 0].values
 y = df.iloc[:, 1].values
@@ -55,4 +55,5 @@ y = model.predict(poly.fit_transform(x.reshape(-1, 1)))
 plt.plot(x, y)
 plt.xlabel('x')
 plt.ylabel('y')
+
 plt.show()
